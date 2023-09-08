@@ -8,7 +8,10 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.5.0",
+    "chromatic": "^7.0.0",
     "classnames": "^2.3.2",
+    "react-transition-group": "^4.4.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -19,8 +22,9 @@
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "sb": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_20c10b60377f790"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^7.4.0",
     "@storybook/addon-essentials": "^7.4.0",
     "@storybook/addon-interactions": "^7.4.0",
     "@storybook/addon-links": "^7.4.0",
@@ -58,6 +63,7 @@
     "@types/node": "^16.18.48",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "@types/react-transition-group": "^4.4.6",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-storybook": "^0.6.13",
     "node-sass": "^9.0.0",
@@ -68,5 +74,7 @@
     "sass": "^1.66.1",
     "storybook": "^7.4.0",
     "webpack": "^5.88.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "gdesign@0.1.0"
 }

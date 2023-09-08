@@ -16,37 +16,45 @@ const meta: Meta<InputProps> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const Template: Story<InputProps> = (args: InputProps) => <Input {...args} />;
-
-
-export const Default = Template.bind({});
-Default.args = {
-  placeholder: 'Enter text...',
+export const Default: Story = {
+  args: {
+    placeholder: 'Enter text...'
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
-  placeholder: 'Disabled input',
+export const Disabled: Story = {
+  args: {
+    placeholder: 'Enter text...',
+    disabled: true
+  },
 };
 
-export const WithIcon = Template.bind({});
-WithIcon.args = {
-  icon: 'your-icon-name', // 您的图标名称
-  placeholder: 'Input with icon',
+
+export const Size: Story = {
+  args: {
+    placeholder: 'Enter text...',
+    size: 'lg'
+  },
+};
+export const Prepend: Story = {
+  args: {
+    placeholder: 'Enter text...',
+    prepend: '$',
+  },
 };
 
-export const LargeSize = Template.bind({});
-LargeSize.args = {
-  size: 'lg',
-  placeholder: 'Large input',
+export const Append: Story = {
+  args: {
+    placeholder: 'Enter text...',
+    append: '.00',
+  },
 };
 
-export const WithPrependAndAppend = Template.bind({});
-WithPrependAndAppend.args = {
-  prepend: '$',
-  append: '.00',
-  placeholder: 'Price input',
+export const Event: Story = {
+  args: {
+    placeholder: 'Enter text...',
+    onChange: (e) => alert(e.target.value)
+  },
 };
 
-// 您可以继续添加更多的故事来展示组件的不同状态和属性
+
